@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header id="entete">
+        <!--les style css-->
+        <style>
+            body{
+                display: grid;
+                place-items: center;
+            }
+            #tete{
+                background-color: rgb(32, 32, 112);
+                height: 30px;
+                border-radius: 10px;
+            }
+            .menu li{
+                list-style-type: none;
+                display: inline;
+                padding: 50px;
+            }
+            .menu li a{
+                text-decoration: none;
+                color: whitesmoke;
+                font-size: 20px;
+            }
+            .menu li a:hover{
+                color: white;
+                font-size: 18px;
+                border: solid .1px;
+                border-radius: 5px;
+            }
+
+            /*infos-accueil*/
+            #infos_accueil h4{
+                text-align: center;
+                color: rgb(32, 32, 112);
+                border: solid.1px;
+                border-radius: 5px;
+            }
+
+            #btnDonner{
+                background-color: rgb(32, 32, 112);
+                color: whitesmoke;
+                border-radius: 5px;
+            }
+            #btnDonner:hover{
+                background-color: rgb(90, 105, 218);
+            }
+            #contenu_1{
+                border: solid .5px;
+                border-radius: 10px;
+                background-color: whitesmoke;
+                position: relative;
+                top: 10px;
+            }
+
+            /*infos_membres*/
+            #infos_membres h4{
+                color: rgb(32, 32, 112);
+                border: solid.1px;
+                border-radius: 5px;
+            }
+
+            /*infos_delegué*/
+            #dlg{
+                color: rgb(32, 32, 112);
+                border: solid.1px;
+                border-radius: 5px;  
+                text-align: center;
+            }
+
+            /*le footer*/
+            #pied{
+                background-color: rgb(32, 32, 112);
+                display: block;
+                width: 550px;
+                place-items: center;
+                height: 50px;
+            }
+            #pied p{
+                position: relative;
+                top: 15px;
+            }
+        </style>
+        <div id="tete">
+            <ul class="menu">
+                <li><a href="#acc">Accueil</a></li>
+                <li><a href="#mbr">Membres</a></li>
+                <li><a href="#dlg">Delegué</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--ici les sections de la pages-->
+    <section id="infos_accueil">
+        <h4 id="acc">Bienvenue dans la page de l'infos 2 chez IFT</h4><br>
+        <div>
+            <p>Cette page web contient tous les listes des etudiants de l'informatique en <br> deuxieme année chez IFT.</p>
+            <p>Vous pouvez laisser du pourboire pour ces élèves pour soutenir leur voyage <br>d'etude.Entrez le montant que vous souhaiter donner:</p><br>
+            <div>
+                <label for="text"><strong>Valeur en euro :</strong> </label>
+                <input type="number" id="valeur">
+                <button id="btnDonner">donner</button>
+            </div>
+        </div>
+        <div id="contenu_1">
+            <p><strong>Remarques</strong></p><br>
+            <ul>
+                <li>Si vous avez donnée du pourboire et vous remarquez apres que le solde <br> dans votre carte bancaire est vide,alors je vous informe que ce n'est pas <br> notre putain de problème car nous n'avons fait que demander du pourboire.</li><br>
+                <li>Si vous voulez emener ces etudiants en <strong>france,canada</strong> ou vers des autrez pays,<br>alors n'hesitez pas a appeler le numero <strong>0329955552</strong> car c'est le numero de leur <br>delegué.</li><br>
+                <li>Si vous trouvez du stage pour eux,alors n'appelez pas directement le delegué <br>sinon il ira tout seul a ce stage et il ne le dira pas aux autres</li><br>
+                <li>Merci de votre comprehension!</li>
+            </ul>
+        </div>
+    </section>
+    <!--Les membres-->
+    <section>
+        <div id="infos_membres">
+            <h4 id="mbr">Voici la liste des membres du groupe infos 2</h4>
+            <div>
+                <ol>
+                    <li>Tiana</li>
+                    <li>Ariane</li>
+                    <li>Eli</li>
+                    <li>Tsito</li>
+                    <li>Levao</li>
+                    <li>Anjara</li>
+                    <li>Herilalaina</li>
+                    <li>Fitianah</li>
+                    <li>Fredino</li>
+                    <li>Dolino</li>
+                    <li>Johny</li>
+                    <li>Toky</li>
+                    <li>Zo</li>
+                    <li>Angelo</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <!--le delegue-->
+    <section>
+        <div id="infos_delegue">
+            <h4 id="dlg">Le delegué</h4>
+            <p>Mes dammes et Monsieurs,le delegué de l'infos2 chez IFT est <strong>Tiana</strong>. <br>C'est le leader😂.</p>
+        </div>
+    </section>
+
+    <!--ici le script-->
+    <script>
+        let btnDonner = document.getElementById('btnDonner');
+
+        btnDonner.addEventListener('click',function(){
+            let valeur = document.getElementById('valeur').value;
+            document.getElementById('valeur').value = '';
+            if(valeur){
+                alert('Merci pour votre putain de ' + valeur + 'euros.');
+            }
+        })
+    </script>
+</body>
+<footer>
+    <div id="pied">
+        <p>Copyright,IFT 2025.</p>
+    </div>
+</footer>
+</html>
