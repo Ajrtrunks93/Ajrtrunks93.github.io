@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: whitesmoke;
+}
+.main{
+    margin: 0 auto;
+    width: 1000px;
+}
+.header{
+    position: relative;
+}
+.top-head{
+    border: solid;
+    background-image: url(../Images/row-top-tail.jpg);
+    height: 100px;
+}
+.logo{
+    position: relative;
+    left: 100px;
+    top: 30px;
+}
+.input{
+    position: relative;
+    left: 450px;
+    top: 10px;
+    height: 25px;
+    background-image: url(../Images/search-bg.jpg);
+}
+.search{
+    position: relative;
+    left: 444px;
+    top: 14px;
+}
+.menu{
+    width: 100%;
+    float: right;
+    background-image: url(../Images/menu-bg.jpg);
+}
+.menu li{
+    position: relative;
+    float: left;
+    list-style-type: none;
+    padding: 25px;
+    left: 110px;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+.menu li a:hover{
+    color: black;
+}
+
+
+                    /*FOOTER*/
+
+footer{
+    border: solid;
+    background-color: black;
+    position: relative;
+    bottom: 700px;
+    height: 300px;
+}
+.cont_form{
+    position: relative;
+    color: white;
+    left: 128px;
+    top: 10px;
+}
+.formula{
+    position: relative;
+    top: 20px;
+}
+.foot_inp1{
+    position: relative;
+    left: 130px;
+    width: 400px;
+    height: 20px;
+
+}
+.foot_inp2{
+    position: relative;
+    top: 30px;
+    right: 277px;
+    width: 400px;
+    height: 20px;
+}
+.foot_inp3{
+    position: relative;
+    left: 130px;
+    top: 40px;
+    width: 400px;
+    height: 150px;
+}
+.footer ::placeholder{
+    position: relative;
+    bottom: 100px;
+    color: red;
+}
+.place_h{
+    position: relative;
+    color: grey;
+    bottom: 110px;
+    left: 132px;
+}
+.cs li{
+    float: left;
+    padding: 15px;
+    list-style-type: none;
+    position: relative;
+    left: 415px;
+    top: 20px;
+}
+.cs a{
+    color: aqua;
+}
+.social{
+    position: relative;
+    left: 450px;
+    bottom: 195px;
+}
+.social h1{
+    color: white;
+    position: relative;
+    bottom: 10px;
+}
+.social li{
+    color: whitesmoke;
+    list-style-type: none;
+    position: relative;
+    left: 175px;
+    bottom: 180px;
+    padding: 14px;
+}
+.foot_lien{
+    position: relative;
+    bottom: 360px;
+    left: 585px;
+}
+.foot_lien p{
+    color: whitesmoke;
+    font-size: 12px;
+}
+.foot_lien a{
+    color: aqua;
+    text-decoration: none;
+}
